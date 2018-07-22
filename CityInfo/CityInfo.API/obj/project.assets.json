@@ -12669,11 +12669,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Test\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
+      "projectUniqueName": "D:\\GitHubRepositories\\ASP.NET-Core-API-Course\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
       "projectName": "CityInfo.API",
-      "projectPath": "D:\\Test\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
+      "projectPath": "D:\\GitHubRepositories\\ASP.NET-Core-API-Course\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
       "packagesPath": "C:\\Users\\Nahuel\\.nuget\\packages\\",
-      "outputPath": "D:\\Test\\CityInfo\\CityInfo.API\\obj\\",
+      "outputPath": "D:\\GitHubRepositories\\ASP.NET-Core-API-Course\\CityInfo\\CityInfo.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

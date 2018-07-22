@@ -6,16 +6,28 @@ using System.Threading.Tasks;
 
 namespace CityInfo.API.Controllers
 {
+    [Route("api/[controller]")]
     public class CitiesController : Controller
-    {
-        [HttpGet("api/cities")]
-        public JsonResult GetCities()
+    {        
+        [HttpGet()]
+        public IActionResult GetCities()
         {
-            return new JsonResult(new List<object>()
+            var citiesToReturn = CitiesDataStore.Current.Cities;
+
+            return Ok(citiesToReturn);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetCity(int id)
+        {
+            var cityToReturn = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == id);
+
+            if (cityToReturn == null)
             {
-                new { id=1, name= "Buenos Aires"},
-                new { id=2, name= "Entre Ríos"},
-            });
-        }        
+                return NotFound();
+            }
+
+            return Ok(cityToReturn);
+        }
     }
 }
